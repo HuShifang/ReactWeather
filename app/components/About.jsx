@@ -1,18 +1,19 @@
 var React = require('react');
-
-// var About = React.createClass({
-//   render: function() {
-//     return (
-//       <h3>About Component</h3>
-//     );
-//   }
-// });
+var {Link} = require('react-router');
 
 var About = function (props) {
   return (
     <div>
-      <h3>About</h3>
-      <p>Welcome to the About page</p>
+      <h1 className='text-center'>About</h1>
+      <p>Welcome to the About page.</p>
+      <p>This app uses weather information from <a href='http://openweathermap.org/'>OpenWeatherMap</a>.
+      </p>
+
+      <p>
+        Implementation by <a href="mailto:stephen.p.ford@gmail.com">Stephen Ford</a>
+      </p>
+
+
     </div>
 
   );
